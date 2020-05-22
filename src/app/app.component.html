@@ -317,6 +317,7 @@
 
 <div class="content" role="main">
 
+
   <!-- Highlight Card -->
   <div class="card highlight-card card-small">
 
@@ -330,13 +331,45 @@
       </g>
     </svg>
 
-    <span>{{ title }} app is running!</span>
+    <span>{{ title }}</span><br>
+    <span><i><em>By:</em>Mbote</i></span>
 
     <svg id="rocket-smoke" alt="Rocket Ship Smoke" xmlns="http://www.w3.org/2000/svg" width="516.119" height="1083.632" viewBox="0 0 516.119 1083.632">
       <path id="Path_40" data-name="Path 40" d="M644.6,141S143.02,215.537,147.049,870.207s342.774,201.755,342.774,201.755S404.659,847.213,388.815,762.2c-27.116-145.51-11.551-384.124,271.9-609.1C671.15,139.365,644.6,141,644.6,141Z" transform="translate(-147.025 -140.939)" fill="#f5f5f5"/>
     </svg>
+    
 
   </div>
+
+ 
+  <!-- The content below is only a placeholder and can be replaced -->
+ 
+  <div style="text-align:center">
+    <p><br><br></p>
+    <div class="card highlight-card card-small">
+    <h1>{{ title }}</h1>
+    </div><br><br>
+    First Number: <input type="number" name="num1" [(ngModel)]="num1">
+    <br><br>
+    Second Number:<input type="number" name="num2" [(ngModel)]="num2" >
+    <br><br>
+    <button (click)="add()">ADD</button> 
+    <button (click)="sub()">Sub</button>
+    <button (click)="multiply()">Multiply</button>
+    <button (click)="divide()">Divide</button>
+    <br><br><br>
+    <h2>Result : {{ num3 }}</h2><br><br>
+  </div>
+  
+  <div class="card-container">
+    
+  <div class="card highlight-card card-small">
+   
+    <span><i><em>By:</em>Mbote-Joseph</i></span>
+  </div>
+  </div>
+
+  <button type="submit" class="btn btn-success ">Authors Profile</button>
 
   <!-- Resources -->
   <h2>Resources</h2>
